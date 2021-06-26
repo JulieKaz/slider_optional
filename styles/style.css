@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body * {
+    box-sizing: border-box;
+}
+.slider {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.slider__body {
+    position: relative;
+}
+.slider__images {
+    overflow: hidden;
+    height: 400px;
+    width: 600px;
+    white-space: nowrap;
+}
+.slider__image {
+    background-image: url('../img/american.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: ease 0.4s;
+    height: 400px;
+    width: 600px;
+    display: inline-block;
+}
+.slider-control__arrow {
+    width: 38px;
+    height: 100%;
+    color: transparent;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    transition: ease 0.4s;
+}
+.slider__body:hover .slider-control__arrow {
+    color: #ccc;
+}
+.slider__body .slider-control__arrow:hover {
+    color: #888;
+}
+.slider-control__arrow.prev {
+    left: -38px;
+    transform: scale(-1, 1);
+}
+.slider-control__arrow.next {
+    right: -38px;
+}
+.slider-control__indicator {
+    background-color: #ccc;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: ease 0.4s;
+}
+.slider-control__indicator:hover, .slider-control__indicator.active {
+    background-color: #131313;
+}
+.slider__title {
+    padding: 8px;
+    text-align: center;
+    background-color: #ffffffb0;
+    margin-top: -35px;
+    position: relative;
+}
