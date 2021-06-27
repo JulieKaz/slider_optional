@@ -45,6 +45,10 @@ body * {
 .slider__body .slider-control__arrow:hover {
     color: #888;
 }
+.slider__body .slider-control__arrow:focus {
+    outline-color: #888;
+    color: #888;
+}
 .slider-control__arrow.prev {
     left: -38px;
     transform: scale(-1, 1);
